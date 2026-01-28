@@ -1,14 +1,14 @@
-# Vulnerability Assessment Report – Task 1
+# Task 1 – Vulnerability Assessment Report
 
-This repository contains a Vulnerability Assessment Report prepared as part of the **Future Interns Cyber Security Internship**.
+This repository contains Task 1 submission for the **Future Interns Cyber Security Internship**.
 
-The objective of this task is to identify common security vulnerabilities in a live web application, classify their risk levels, and provide clear remediation steps in a business-friendly manner.
+The objective of this task is to perform a basic vulnerability assessment on a legal testing website and document the findings in a professional manner.
 
 ---
 
-## 🔍 Target Website
+## 🌐 Target Website
 https://testphp.vulnweb.com  
-*(Legal and intentionally vulnerable testing website)*
+(This is a legal and intentionally vulnerable testing website.)
 
 ---
 
@@ -16,41 +16,41 @@ https://testphp.vulnweb.com
 - Nmap
 - OWASP ZAP (Passive Scan)
 - Browser Developer Tools
-- Canva (Report Design)
+- Canva (for report design)
 
 ---
 
-## 🚨 Vulnerabilities Identified
+## 🔍 Vulnerabilities Identified
 
 ### 1. Open Network Ports
 - **Risk Level:** Low  
-- **Impact:** Allows attackers to identify running services  
-- **Fix:** Close unused ports and configure firewall rules
+- **Description:** Open ports allow attackers to identify running services.
+- **Recommendation:** Close unused ports and configure firewall rules.
 
 ---
 
 ### 2. Missing Security Headers
-- X-Frame-Options  
-- Content-Security-Policy  
+- X-Frame-Options
+- Content-Security-Policy
 - **Risk Level:** Medium  
-- **Impact:** Clickjacking and script injection  
-- **Fix:** Configure proper HTTP security headers
+- **Impact:** Clickjacking and script injection attacks.
+- **Recommendation:** Configure proper HTTP security headers.
 
 ---
 
 ### 3. Insecure Cookies
-- Missing Secure & HttpOnly flags  
+- Secure and HttpOnly flags missing.
 - **Risk Level:** Medium  
-- **Impact:** Session hijacking  
-- **Fix:** Enable Secure and HttpOnly attributes
+- **Impact:** Session hijacking.
+- **Recommendation:** Enable Secure and HttpOnly flags.
 
 ---
 
 ### 4. Input Validation Issues
-- Unsanitized input fields  
+- Unsanitized user inputs.
 - **Risk Level:** Medium  
-- **Impact:** XSS and SQL Injection attacks  
-- **Fix:** Validate user input and use prepared statements
+- **Impact:** XSS and SQL Injection.
+- **Recommendation:** Validate and sanitize all inputs.
 
 ---
 
@@ -65,28 +65,20 @@ https://testphp.vulnweb.com
 
 ---
 
-## 🔐 Recommendations
-- Implement HTTP security headers
-- Secure cookies properly
-- Validate all user inputs
-- Perform regular vulnerability assessments
-
----
-
 ## 📚 Key Learnings
-- Web vulnerability identification
+- Vulnerability identification
 - Risk classification
 - Security documentation
-- Ethical security testing
+- Ethical testing practices
 
 ---
 
 ## ⚠ Disclaimer
-All testing was conducted on a legal, intentionally vulnerable website for educational purposes only. No unauthorized systems were tested.
+All testing was conducted only on a legal testing website for educational purposes.
 
 ---
 
-## ✅ Internship Task Status
-✔ Task Completed  
-✔ Eligible for Certificate  
-✔ GitHub Verified
+## ✅ Task Status
+✔ Completed  
+✔ GitHub Documented  
+✔ Internship Ready
